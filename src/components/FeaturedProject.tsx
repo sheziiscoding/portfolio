@@ -34,7 +34,7 @@ export default function FeaturedProject() {
         </div>
 
         <div className="mb-24">
-          <h2 className="text-sm font-space tracking-[0.3em] text-lime-400 mb-6 uppercase">
+          <h2 className="text-sm font-space tracking-[0.3em] text-blue-500 mb-6 uppercase">
             The Thing I'm Proud Of
           </h2>
           <h3 className="text-4xl md:text-6xl font-space font-bold tracking-tighter mb-6 uppercase">
@@ -92,7 +92,7 @@ export default function FeaturedProject() {
 
           {/* Browser Mockup */}
           <div className="lg:col-span-7 sticky top-32">
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-md overflow-hidden shadow-2xl shadow-lime-900/10">
+            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-md overflow-hidden shadow-2xl shadow-blue-900/10">
               {/* Browser Header */}
               <div className="h-12 border-b border-zinc-800 flex items-center px-4 gap-4 bg-zinc-950">
                 <div className="flex gap-2">
@@ -157,7 +157,7 @@ export default function FeaturedProject() {
                       key={idx}
                       onClick={() => setActiveScreen(idx)}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        idx === activeScreen ? "bg-lime-400 w-6" : "bg-zinc-700"
+                        idx === activeScreen ? "bg-blue-500 w-6" : "bg-zinc-700"
                       }`}
                     />
                   ))}

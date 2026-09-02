@@ -40,7 +40,7 @@ export default function SoftSkills() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="px-6 py-3 rounded-full border border-zinc-800 bg-zinc-900 text-zinc-300 font-medium hover:border-lime-400 hover:text-lime-400 transition-colors cursor-default"
+                  className="px-6 py-3 rounded-full border border-zinc-800 bg-zinc-900 text-zinc-300 font-medium hover:border-blue-500 hover:text-blue-500 transition-colors cursor-default"
                 >
                   {skill}
                 </motion.div>
@@ -63,7 +63,7 @@ export default function SoftSkills() {
                   transition={{ delay: index * 0.1 }}
                   className="flex items-end justify-between border-b border-zinc-900 pb-4 group"
                 >
-                  <span className="text-xl md:text-2xl font-space font-bold text-zinc-300 group-hover:text-lime-400 transition-colors">
+                  <span className="text-xl md:text-2xl font-space font-bold text-zinc-300 group-hover:text-blue-500 transition-colors">
                     {lang.name}
                   </span>
                   <span className="text-sm font-space tracking-widest text-zinc-500">

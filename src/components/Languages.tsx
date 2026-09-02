@@ -52,7 +52,7 @@ export default function Languages() {
               <div className="flex flex-col md:flex-row md:items-end gap-4 md:gap-8 z-10">
                 <span className={clsx(
                   "text-5xl md:text-7xl font-space font-bold tracking-tighter transition-colors duration-500",
-                  hoveredIndex === index ? "text-lime-400" : "text-zinc-300"
+                  hoveredIndex === index ? "text-blue-500" : "text-zinc-300"
                 )}>
                   {lang.name}
                 </span>
@@ -74,7 +74,7 @@ export default function Languages() {
               {hoveredIndex === index && (
                 <motion.div
                   layoutId="language-hover"
-                  className="absolute inset-0 bg-gradient-to-r from-lime-500/5 to-transparent pointer-events-none"
+                  className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-transparent pointer-events-none"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}

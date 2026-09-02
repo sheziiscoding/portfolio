@@ -35,7 +35,7 @@ export default function Navigation() {
       )}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold font-space tracking-tighter hover:text-lime-400 transition-colors">
+        <a href="#" className="text-xl font-bold font-space tracking-tighter hover:text-blue-500 transition-colors">
           SM
         </a>
 
@@ -57,7 +57,7 @@ export default function Navigation() {
         <div className="hidden md:block">
           <a
             href="#contact"
-            className="text-xs font-semibold tracking-widest flex items-center gap-2 hover:text-lime-400 transition-colors group"
+            className="text-xs font-semibold tracking-widest flex items-center gap-2 hover:text-blue-500 transition-colors group"
           >
             LET'S TALK <span className="group-hover:translate-x-1 transition-transform">↗</span>
           </a>
@@ -94,7 +94,7 @@ export default function Navigation() {
           <a
             href="#contact"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-lg font-space tracking-widest text-lime-400 flex items-center gap-2"
+            className="text-lg font-space tracking-widest text-blue-500 flex items-center gap-2"
           >
             LET'S TALK ↗
           </a>

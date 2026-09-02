@@ -61,9 +61,9 @@ export default function Toolbox() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.05 }}
-              className="flex flex-col items-center justify-center p-8 gap-4 rounded-3xl border border-zinc-900 bg-zinc-950/50 backdrop-blur-sm group hover:border-lime-400/50 hover:bg-zinc-900 transition-all duration-300"
+              className="flex flex-col items-center justify-center p-8 gap-4 rounded-3xl border border-zinc-900 bg-zinc-950/50 backdrop-blur-sm group hover:border-blue-500/50 hover:bg-zinc-900 transition-all duration-300"
             >
-              <div className="text-zinc-500 group-hover:text-lime-400 transition-colors duration-300 group-hover:scale-110 transform">
+              <div className="text-zinc-500 group-hover:text-blue-500 transition-colors duration-300 group-hover:scale-110 transform">
                 {skill.logo}
               </div>
               <span className="text-sm font-space font-bold tracking-widest text-zinc-400 group-hover:text-zinc-200 transition-colors duration-300">

@@ -48,8 +48,8 @@ export default function About() {
                   transition={{ delay: index * 0.1 }}
                   className="flex flex-col items-center group w-full md:w-auto"
                 >
-                  <div className="w-16 h-16 rounded-full border border-zinc-800 bg-zinc-900/50 flex items-center justify-center mb-4 group-hover:border-lime-500/50 group-hover:bg-lime-500/10 transition-all duration-500">
-                    <span className="text-xs font-space tracking-widest text-zinc-400 group-hover:text-lime-400">
+                  <div className="w-16 h-16 rounded-full border border-zinc-800 bg-zinc-900/50 flex items-center justify-center mb-4 group-hover:border-blue-600/50 group-hover:bg-blue-600/10 transition-all duration-500">
+                    <span className="text-xs font-space tracking-widest text-zinc-400 group-hover:text-blue-500">
                       0{index + 1}
                     </span>
                   </div>

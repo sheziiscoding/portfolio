@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-lime-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center z-10 relative">
         
@@ -31,7 +31,7 @@ export default function Hero() {
           className="flex flex-col gap-6"
         >
           <div className="flex flex-col">
-            <span className="text-sm font-space tracking-[0.3em] text-lime-400 mb-4">PORTFOLIO '26</span>
+            <span className="text-sm font-space tracking-[0.3em] text-blue-500 mb-4">PORTFOLIO '26</span>
             <h1 className="text-6xl md:text-8xl font-space font-bold tracking-tighter leading-[0.9]">
               HEY,
               <br />
@@ -53,10 +53,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 mt-8">
-            <a href="#project" className="px-8 py-4 bg-lime-400 text-zinc-950 font-space font-bold text-sm tracking-widest hover:bg-lime-300 hover:scale-105 transition-all">
+            <a href="#project" className="px-8 py-4 bg-blue-500 text-zinc-950 font-space font-bold text-sm tracking-widest hover:bg-blue-400 hover:scale-105 transition-all">
               EXPLORE MY WORK
             </a>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-zinc-800 text-zinc-300 font-space font-bold text-sm tracking-widest hover:border-lime-400 hover:text-lime-400 transition-all">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-zinc-800 text-zinc-300 font-space font-bold text-sm tracking-widest hover:border-blue-500 hover:text-blue-500 transition-all">
               VIEW RESUME
             </a>
             <a href="#contact" className="px-8 py-4 border border-zinc-800 text-zinc-300 font-space font-bold text-sm tracking-widest hover:border-zinc-500 hover:text-white transition-all hidden sm:block">
@@ -74,7 +74,7 @@ export default function Hero() {
           className="relative h-[600px] w-full flex items-center justify-center"
         >
           {/* Layered shapes */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-lime-500/20 to-transparent rounded-full blur-3xl" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent rounded-full blur-3xl" />
           <motion.div 
             animate={{ rotate: 360 }}
             transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
@@ -84,7 +84,7 @@ export default function Hero() {
           {/* Main Photo Container */}
           <div className="relative w-72 h-[400px] md:w-80 md:h-[450px] z-10">
             <div className="absolute inset-0 bg-zinc-800 rounded-[2rem] rotate-[-6deg] scale-105 opacity-50" />
-            <div className="absolute inset-0 bg-lime-900/30 rounded-[2rem] rotate-[3deg] scale-105 blur-sm" />
+            <div className="absolute inset-0 bg-blue-900/30 rounded-[2rem] rotate-[3deg] scale-105 blur-sm" />
             <div className="relative w-full h-full rounded-[2rem] overflow-hidden border border-zinc-700/50 bg-zinc-900 z-10">
               <div className="absolute inset-0 flex items-center justify-center text-zinc-600 text-sm font-space text-center p-6 border-2 border-dashed border-zinc-800 m-4 rounded-xl">
                 [ REPLACE THIS PLACEHOLDER ]
@@ -111,7 +111,7 @@ export default function Hero() {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -right-12 top-12 bg-zinc-900/80 backdrop-blur-md border border-zinc-800 px-4 py-2 rounded-full z-30"
             >
-              <span className="text-xs font-space font-bold tracking-widest text-lime-400">CSE STUDENT</span>
+              <span className="text-xs font-space font-bold tracking-widest text-blue-500">CSE STUDENT</span>
             </motion.div>
 
             <motion.div 

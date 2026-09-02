@@ -59,7 +59,7 @@ export default function ProjectStory() {
                     <div className={`p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 ${
                       index % 2 === 0 ? "md:text-left" : "md:text-right"
                     }`}>
-                      <h4 className="text-sm font-space font-bold tracking-widest text-lime-400 mb-2">
+                      <h4 className="text-sm font-space font-bold tracking-widest text-blue-500 mb-2">
                         {item.phase}
                       </h4>
                       <p className="text-zinc-300 text-sm md:text-base">
