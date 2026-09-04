@@ -12,6 +12,7 @@ const educationDetails = [
     icon: <GraduationCap className="w-5 h-5" />,
     color: "group-hover:border-lime-400 group-hover:bg-lime-400/10",
     iconColor: "group-hover:text-lime-400",
+    dotColor: "group-hover:bg-lime-400",
   },
   {
     degree: "Class XII (Computer Science Stream)",
@@ -21,6 +22,7 @@ const educationDetails = [
     icon: <BookOpen className="w-5 h-5" />,
     color: "group-hover:border-zinc-500 group-hover:bg-zinc-800/50",
     iconColor: "group-hover:text-zinc-300",
+    dotColor: "group-hover:bg-zinc-300",
   },
   {
     degree: "Class X",
@@ -30,6 +32,7 @@ const educationDetails = [
     icon: <ScrollText className="w-5 h-5" />,
     color: "group-hover:border-zinc-500 group-hover:bg-zinc-800/50",
     iconColor: "group-hover:text-zinc-300",
+    dotColor: "group-hover:bg-zinc-300",
   }
 ];
 
@@ -57,7 +60,7 @@ export default function Education() {
               className="relative group cursor-default"
             >
               {/* Timeline dot */}
-              <div className={`absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full border-4 border-zinc-950 bg-zinc-700 transition-colors duration-500 ${item.iconColor.replace('group-hover:text-', 'group-hover:bg-')}`} />
+              <div className={`absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full border-4 border-zinc-950 bg-zinc-700 transition-colors duration-500 ${item.dotColor}`} />
 
               <div className={`p-8 rounded-2xl border border-zinc-900 bg-zinc-950/50 backdrop-blur-sm transition-all duration-500 ${item.color}`}>
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
