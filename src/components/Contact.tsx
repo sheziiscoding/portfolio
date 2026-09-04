@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 export default function Contact() {
@@ -10,14 +11,14 @@ export default function Contact() {
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="flex items-center gap-4 mb-16">
-          <span className="text-xs font-space tracking-widest text-zinc-500">06 / CONTACT</span>
-          <div className="h-[1px] w-12 bg-zinc-800" />
+          <span className="text-xs font-space tracking-widest text-zinc-800">05 / CONTACT</span>
+          <div className="h-[1px] w-12 bg-zinc-950" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-32">
           <div>
             <h2 className="text-5xl md:text-7xl font-space font-bold tracking-tighter leading-[0.9] mb-8">
-              LET&apos;S BUILD
+              LET'S BUILD
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-950 to-zinc-700">
                 SOMETHING.
@@ -35,7 +36,7 @@ export default function Contact() {
                 const name = formData.get("name");
                 const subject = formData.get("subject");
                 const message = formData.get("message");
-                window.location.href = `mailto:shezilmuhammeee@gmail.com?subject=${encodeURIComponent(subject as string || "Portfolio Contact")}&body=${encodeURIComponent(`Hi Shezil,\n\nI&apos;m ${name}.\n\n${message}`)}`;
+                window.location.href = `mailto:shezilmuhammeee@gmail.com?subject=${encodeURIComponent(subject as string || "Portfolio Contact")}&body=${encodeURIComponent(`Hi Shezil,\n\nI'm ${name}.\n\n${message}`)}`;
               }}
             >
               <input 

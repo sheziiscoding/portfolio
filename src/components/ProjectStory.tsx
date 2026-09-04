@@ -23,14 +23,14 @@ const storyTimeline = [
 
 export default function ProjectStory() {
   return (
-    <section className="py-24 relative bg-lime-400 border-t border-zinc-950/20">
+    <section className="py-24 relative bg-zinc-950 border-t border-zinc-900">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-space font-bold tracking-tighter mb-8 text-center">
             WHY I BUILT IT
           </h3>
           
-          <div className="text-lg md:text-xl text-zinc-900 font-light leading-relaxed text-center mb-16 space-y-6">
+          <div className="text-lg md:text-xl text-zinc-400 font-light leading-relaxed text-center mb-16 space-y-6">
             <p>
               I wanted to explore how a traditional reception experience could become more interactive and convenient using modern web technologies and AI-assisted tools.
             </p>
@@ -41,7 +41,7 @@ export default function ProjectStory() {
 
           <div className="relative">
             {/* Connecting line */}
-            <div className="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-zinc-950 -translate-x-1/2" />
+            <div className="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-zinc-800 -translate-x-1/2" />
             
             <div className="space-y-12 relative">
               {storyTimeline.map((item, index) => (
@@ -56,19 +56,19 @@ export default function ProjectStory() {
                   }`}
                 >
                   <div className="flex-1 w-full md:text-right">
-                    <div className={`p-6 rounded-2xl bg-lime-400/50 border border-zinc-950/20 ${
+                    <div className={`p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 ${
                       index % 2 === 0 ? "md:text-left" : "md:text-right"
                     }`}>
-                      <h4 className="text-sm font-space font-bold tracking-widest text-zinc-950 mb-2">
+                      <h4 className="text-sm font-space font-bold tracking-widest text-blue-500 mb-2">
                         {item.phase}
                       </h4>
-                      <p className="text-zinc-800 text-sm md:text-base">
+                      <p className="text-zinc-300 text-sm md:text-base">
                         {item.text}
                       </p>
                     </div>
                   </div>
                   
-                  <div className="hidden md:flex w-12 h-12 rounded-full bg-lime-400 border-2 border-zinc-950/20 items-center justify-center z-10">
+                  <div className="hidden md:flex w-12 h-12 rounded-full bg-zinc-950 border-2 border-zinc-800 items-center justify-center z-10">
                     <div className="w-3 h-3 rounded-full bg-zinc-600" />
                   </div>
                   
@@ -82,6 +82,3 @@ export default function ProjectStory() {
     </section>
   );
 }
-
-
-

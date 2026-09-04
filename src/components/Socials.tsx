@@ -32,7 +32,7 @@ const socials = [
 
 export default function Socials() {
   return (
-    <section className="py-32 relative bg-lime-400 border-t border-zinc-950/20">
+    <section className="py-32 relative bg-zinc-950 border-t border-zinc-900">
       <div className="container mx-auto px-6 md:px-12">
         <h2 className="text-3xl md:text-5xl font-space font-bold tracking-tighter mb-16 text-center">
           FIND ME ONLINE
@@ -49,21 +49,21 @@ export default function Socials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group p-8 rounded-3xl border border-zinc-950/20 bg-lime-400/30 hover:bg-zinc-950/50 hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between h-48 relative overflow-hidden"
+              className="group p-8 rounded-3xl border border-zinc-800 bg-zinc-900/30 hover:bg-zinc-800/50 hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between h-48 relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 group-hover:translate-x-2 transition-all duration-300">
-                <ArrowUpRight className="w-6 h-6 text-zinc-900" />
+                <ArrowUpRight className="w-6 h-6 text-zinc-400" />
               </div>
               
-              <div className="w-12 h-12 rounded-full bg-zinc-950/50 flex items-center justify-center text-zinc-800 group-hover:scale-110 group-hover:text-zinc-950 transition-all duration-300">
+              <div className="w-12 h-12 rounded-full bg-zinc-800/50 flex items-center justify-center text-zinc-300 group-hover:scale-110 group-hover:text-white transition-all duration-300">
                 {social.icon}
               </div>
               
               <div>
-                <h3 className="text-xl font-space font-bold tracking-tight text-zinc-900 mb-1">
+                <h3 className="text-xl font-space font-bold tracking-tight text-zinc-200 mb-1">
                   {social.name}
                 </h3>
-                <p className="text-sm text-zinc-800 font-medium">
+                <p className="text-sm text-zinc-500 font-medium">
                   {social.label}
                 </p>
               </div>
@@ -74,6 +74,3 @@ export default function Socials() {
     </section>
   );
 }
-
-
-

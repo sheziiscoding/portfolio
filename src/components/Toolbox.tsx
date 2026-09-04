@@ -40,16 +40,16 @@ const skills = [
 
 export default function Toolbox() {
   return (
-    <section id="skills" className="py-24 relative bg-lime-400 overflow-hidden border-t border-zinc-950/20">
+    <section id="skills" className="py-24 relative bg-zinc-950 overflow-hidden border-t border-zinc-900">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
       
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="flex items-center gap-4 mb-16">
-          <span className="text-xs font-space tracking-widest text-zinc-800">02 / TECHNICAL SKILLS</span>
-          <div className="h-[1px] w-12 bg-zinc-950" />
+          <span className="text-xs font-space tracking-widest text-zinc-500">02 / TECHNICAL SKILLS</span>
+          <div className="h-[1px] w-12 bg-zinc-800" />
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-space font-bold tracking-tighter mb-16 text-zinc-950">
+        <h2 className="text-3xl md:text-5xl font-space font-bold tracking-tighter mb-16 text-zinc-100">
           MY TOOLBOX
         </h2>
 
@@ -61,12 +61,12 @@ export default function Toolbox() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.05 }}
-              className="flex flex-col items-center justify-center p-8 gap-4 rounded-3xl border border-zinc-950/20 bg-lime-400/50 backdrop-blur-sm group hover:border-zinc-950/50 hover:bg-lime-400 transition-all duration-300"
+              className="flex flex-col items-center justify-center p-8 gap-4 rounded-3xl border border-zinc-900 bg-zinc-950/50 backdrop-blur-sm group hover:border-blue-500/50 hover:bg-zinc-900 transition-all duration-300"
             >
-              <div className="text-zinc-800 group-hover:text-zinc-950 transition-colors duration-300 group-hover:scale-110 transform">
+              <div className="text-zinc-500 group-hover:text-blue-500 transition-colors duration-300 group-hover:scale-110 transform">
                 {skill.logo}
               </div>
-              <span className="text-sm font-space font-bold tracking-widest text-zinc-900 group-hover:text-zinc-900 transition-colors duration-300">
+              <span className="text-sm font-space font-bold tracking-widest text-zinc-400 group-hover:text-zinc-200 transition-colors duration-300">
                 {skill.name}
               </span>
             </motion.div>
@@ -76,6 +76,3 @@ export default function Toolbox() {
     </section>
   );
 }
-
-
-

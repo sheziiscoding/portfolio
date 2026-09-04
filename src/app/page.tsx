@@ -6,7 +6,6 @@ import SoftSkills from "@/components/SoftSkills";
 import FeaturedProject from "@/components/FeaturedProject";
 import ProjectStory from "@/components/ProjectStory";
 import TechStack from "@/components/TechStack";
-import Education from "@/components/Education";
 import Socials from "@/components/Socials";
 import Contact from "@/components/Contact";
 
@@ -21,7 +20,6 @@ export default function Home() {
       <FeaturedProject />
       <ProjectStory />
       <TechStack />
-      <Education />
       <Socials />
       <Contact />
     </main>
