@@ -15,9 +15,9 @@ const technologies = [
 
 export default function TechStack() {
   return (
-    <section className="py-24 relative bg-zinc-950 border-t border-zinc-900 overflow-hidden">
+    <section className="py-24 relative bg-lime-400 border-t border-zinc-950/20 overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 text-center">
-        <h3 className="text-sm font-space tracking-[0.3em] text-zinc-500 mb-12 uppercase">
+        <h3 className="text-sm font-space tracking-[0.3em] text-zinc-800 mb-12 uppercase">
           BUILT WITH
         </h3>
         
@@ -29,7 +29,7 @@ export default function TechStack() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="px-6 py-3 rounded-full border border-zinc-800 bg-zinc-900/30 text-zinc-300 font-medium hover:bg-zinc-800 hover:text-white transition-colors cursor-default backdrop-blur-sm"
+              className="px-6 py-3 rounded-full border border-zinc-950/20 bg-lime-400/30 text-zinc-800 font-medium hover:bg-zinc-950 hover:text-zinc-950 transition-colors cursor-default backdrop-blur-sm"
             >
               {tech}
             </motion.div>
@@ -39,3 +39,6 @@ export default function TechStack() {
     </section>
   );
 }
+
+
+

@@ -30,24 +30,24 @@ export default function Navigation() {
       className={clsx(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
         isScrolled
-          ? "bg-zinc-950/70 backdrop-blur-md border-zinc-800/50 py-4"
+          ? "bg-lime-400/70 backdrop-blur-md border-zinc-950/20/50 py-4"
           : "bg-transparent py-6"
       )}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold font-space tracking-tighter hover:text-blue-500 transition-colors">
+        <a href="#" className="text-xl font-bold font-space tracking-tighter hover:text-zinc-950 transition-colors">
           SM
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest text-zinc-400">
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest text-zinc-900">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               target={link.external ? "_blank" : undefined}
               rel={link.external ? "noopener noreferrer" : undefined}
-              className="hover:text-zinc-50 transition-colors"
+              className="hover:text-zinc-950 transition-colors"
             >
               {link.name}
             </a>
@@ -57,7 +57,7 @@ export default function Navigation() {
         <div className="hidden md:block">
           <a
             href="#contact"
-            className="text-xs font-semibold tracking-widest flex items-center gap-2 hover:text-blue-500 transition-colors group"
+            className="text-xs font-semibold tracking-widest flex items-center gap-2 hover:text-zinc-950 transition-colors group"
           >
             LET'S TALK <span className="group-hover:translate-x-1 transition-transform">↗</span>
           </a>
@@ -65,7 +65,7 @@ export default function Navigation() {
 
         {/* Mobile Nav Toggle */}
         <button
-          className="md:hidden text-zinc-50"
+          className="md:hidden text-zinc-950"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X /> : <Menu />}
@@ -77,7 +77,7 @@ export default function Navigation() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden absolute top-full left-0 right-0 bg-zinc-950 border-b border-zinc-800 p-6 flex flex-col gap-6"
+          className="md:hidden absolute top-full left-0 right-0 bg-lime-400 border-b border-zinc-950/20 p-6 flex flex-col gap-6"
         >
           {navLinks.map((link) => (
             <a
@@ -86,7 +86,7 @@ export default function Navigation() {
               target={link.external ? "_blank" : undefined}
               rel={link.external ? "noopener noreferrer" : undefined}
               onClick={() => setMobileMenuOpen(false)}
-              className="text-lg font-space tracking-widest text-zinc-400 hover:text-zinc-50 transition-colors"
+              className="text-lg font-space tracking-widest text-zinc-900 hover:text-zinc-950 transition-colors"
             >
               {link.name}
             </a>
@@ -94,7 +94,7 @@ export default function Navigation() {
           <a
             href="#contact"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-lg font-space tracking-widest text-blue-500 flex items-center gap-2"
+            className="text-lg font-space tracking-widest text-zinc-950 flex items-center gap-2"
           >
             LET'S TALK ↗
           </a>
@@ -103,3 +103,6 @@ export default function Navigation() {
     </header>
   );
 }
+
+
+
