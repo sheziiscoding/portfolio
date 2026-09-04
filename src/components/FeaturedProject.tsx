@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 import { ExternalLink, ChevronRight, ChevronLeft } from "lucide-react";
 
 const screens = [
-  { name: "Invitation Landing", image: "/project-invitation.jpg" },
-  { name: "AI Photo Recognition", image: "/project-ai.jpg" },
-  { name: "Food QR System", image: "/project-qr.jpg" },
-  { name: "Reception Dashboard", image: "/project-dashboard.jpg" },
+  { name: "Invitation Landing", image: "/project-invitation.png" },
+  { name: "AI Photo Recognition", image: "/project-ai.png" },
+  { name: "Food QR System", image: "/project-qr.png" },
+  { name: "Reception Dashboard", image: "/project-dashboard.png" },
 ];
 
 const tags = [
@@ -121,15 +121,12 @@ export default function FeaturedProject() {
                     className="absolute inset-0 flex flex-col items-center justify-center bg-lime-400"
                   >
                     <div className="relative w-full h-full">
-                      {/* You'll need to import Image from "next/image" at the top of the file */}
                       <img
                         src={screen.image}
                         alt={screen.name}
                         className="object-cover w-full h-full"
                         onError={(e) => {
-                          e.currentTarget.style.display = 'none';
-                          e.currentTarget.parentElement!.classList.add('flex', 'items-center', 'justify-center', 'border-2', 'border-dashed', 'border-zinc-700/50', 'm-8', 'rounded-xl');
-                          e.currentTarget.parentElement!.innerHTML = `<span class="text-zinc-800 font-space tracking-widest text-sm uppercase">${screen.name} (Missing Image)</span>`;
+                          e.currentTarget.src = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMzMzMiIC8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZpbGw9IiM4ODgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjM1ZW0iPk1pc3NpbmcgSW1hZ2U8L3RleHQ+PC9zdmc+";
                         }}
                       />
                     </div>
