@@ -25,13 +25,13 @@ export default function About() {
 
           <div className="lg:col-span-7 flex flex-col gap-8">
             <p className="text-lg md:text-xl text-zinc-800 leading-relaxed font-light">
-              I'm Shezil Muhammed, a Computer Science Engineering student passionate about software development and building things that solve real problems.
+              I&apos;m Shezil Muhammed, a Computer Science Engineering student passionate about software development and building things that solve real problems.
             </p>
             <p className="text-lg md:text-xl text-zinc-900 leading-relaxed font-light">
               I enjoy working across programming, backend development, databases, and AI-assisted applications. Instead of only learning technologies theoretically, I like turning what I learn into actual projects and experiences.
             </p>
             <p className="text-lg md:text-xl text-zinc-900 leading-relaxed font-light">
-              I'm constantly learning, experimenting, and looking for opportunities to build products that are useful, creative, and technically interesting.
+              I&apos;m constantly learning, experimenting, and looking for opportunities to build products that are useful, creative, and technically interesting.
             </p>
           </div>
         </div>

@@ -31,11 +31,11 @@ export default function Hero() {
           className="flex flex-col gap-6"
         >
           <div className="flex flex-col">
-            <span className="text-sm font-space tracking-[0.3em] text-zinc-950 mb-4">PORTFOLIO '26</span>
+            <span className="text-sm font-space tracking-[0.3em] text-zinc-950 mb-4">PORTFOLIO &apos;26</span>
             <h1 className="text-6xl md:text-8xl font-space font-bold tracking-tighter leading-[0.9]">
               HEY,
               <br />
-              I'M
+              I&apos;m
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-950 to-zinc-700">
                 SHEZIL.
@@ -49,7 +49,7 @@ export default function Hero() {
           </p>
 
           <p className="text-zinc-900 max-w-md text-base leading-relaxed">
-            I'm a CSE student who enjoys building practical digital products, experimenting with AI-assisted experiences, and turning ideas into functional web applications.
+            I&apos;m a CSE student who enjoys building practical digital products, experimenting with AI-assisted experiences, and turning ideas into functional web applications.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-8">
@@ -60,7 +60,7 @@ export default function Hero() {
               VIEW RESUME
             </a>
             <a href="#contact" className="px-8 py-4 border border-zinc-950/20 text-zinc-800 font-space font-bold text-sm tracking-widest hover:border-zinc-500 hover:text-zinc-950 transition-all hidden sm:block">
-              LET'S CONNECT
+              LET&apos;S CONNECT
             </a>
           </div>
         </motion.div>

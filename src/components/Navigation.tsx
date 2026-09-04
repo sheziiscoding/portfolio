@@ -59,7 +59,7 @@ export default function Navigation() {
             href="#contact"
             className="text-xs font-semibold tracking-widest flex items-center gap-2 hover:text-zinc-950 transition-colors group"
           >
-            LET'S TALK <span className="group-hover:translate-x-1 transition-transform">↗</span>
+            LET&apos;S TALK <span className="group-hover:translate-x-1 transition-transform">↗</span>
           </a>
         </div>
 
@@ -96,7 +96,7 @@ export default function Navigation() {
             onClick={() => setMobileMenuOpen(false)}
             className="text-lg font-space tracking-widest text-zinc-950 flex items-center gap-2"
           >
-            LET'S TALK ↗
+            LET&apos;S TALK ↗
           </a>
         </motion.div>
       )}

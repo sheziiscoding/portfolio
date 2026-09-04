@@ -35,7 +35,7 @@ export default function FeaturedProject() {
 
         <div className="mb-24">
           <h2 className="text-sm font-space tracking-[0.3em] text-zinc-950 mb-6 uppercase">
-            The Thing I'm Proud Of
+            The Thing I&apos;m Proud Of
           </h2>
           <h3 className="text-4xl md:text-6xl font-space font-bold tracking-tighter mb-6 uppercase">
             All-In-One Reception<br />Assistant
